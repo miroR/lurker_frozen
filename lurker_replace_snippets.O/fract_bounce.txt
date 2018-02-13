@@ -1,0 +1,2 @@
+<!-- script-replaced from live lurker archive, see https://github.com/miroR/lurker_frozen  -->
+<p><a href="/foss/cenz/$link_archive/REPLACETHIS" target="_blank">same mail(s) page w/ headers mostly <b>fixed</b></a> (own window)</p>

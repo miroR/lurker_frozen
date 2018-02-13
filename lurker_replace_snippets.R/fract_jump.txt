@@ -1,0 +1,2 @@
+<!-- script-replaced from live lurker archive, see https://github.com/miroR/lurker_frozen  -->
+<p>Details on this twine <a href="/foss/cenz/$link_archive/index.html" target="_blank">original</a>, and <a href="/foss/cenz/$cur_archive/index.html" target="_blank">restored</a>, mail web archive</p>
