@@ -5,7 +5,7 @@
 # rewrite live lurker mail pages where content btwn form tags originally
 # belongs, for non-interactive HTML-only frozen lurker snapshot of live lurker.
 #
-# Copyright (C) 2018 Miroslav Rovis, <http://www.CroatiaFidelis.hr/>
+# Copyright (C) 2018 Miroslav Rovis, <https://www.CroatiaFidelis.hr/>
 # Use this at your own risk!
 # released under BSD license, see LICENSE, or assume general BSD license,
 #
