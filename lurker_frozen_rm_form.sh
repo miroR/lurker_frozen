@@ -36,7 +36,7 @@ echo find ./ -name '*.html' \> ls-1
 find ./ -name '*.html' > ls-1
 mv -iv ls-1 ls-1_RAW
 
-for i in $(cat ls-1_RAW); do
+for i in $(<ls-1_RAW); do
 	if (grep -q '<form ' $i); then
 		echo $i >> ls-1
 	fi	
@@ -45,10 +45,10 @@ ls -l ls-1 ls-1_RAW
 #read FAKE
 sha_1=$(sha256sum ls-1|cut -d' ' -f1)
 sha_2=$(sha256sum ls-1_RAW|cut -d' ' -f1)
-if [ "$sha_1" != "$sha_2" ]; then rm -v ls-1_RAW ; fi
+if [ "$sha_1" == "$sha_2" ]; then rm -v ls-1_RAW ; fi
 #read FAKE
 
-for i in $(cat ls-1); do
+for i in $(<ls-1); do
 	#cat $i
 	#read FAKE
 	sed -i.bak 's/></>\n</g' $i
@@ -81,7 +81,7 @@ for i in $(cat ls-1); do
 		#read FAKE
 		diff $i rm_form_tmp | grep -v '< '
 		#read FAKE
-		echo diff $i rm_form_tmp | grep '< ' \| sed ...
+		echo diff $i rm_form_tmp \| grep '< ' \| sed ...
 		#read FAKE
 		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
 		#read FAKE
