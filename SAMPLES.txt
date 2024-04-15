@@ -1,0 +1,35 @@
+<tr>
+<th align="left">Search the archive for matching messages</th>
+</tr>
+
+[ <a href="../splash/index.en.html#pp-4395-22-posta">Jump to Group</a> ]
+
+<tr>
+<th align="left" colspan="3">Jump to those messages within this mailing list which are nearest to the following date:</th>
+</tr>
+
+<tr>
+<th align="left" colspan="2">Search for messages within this mailing list which contain the following keywords:</th>
+</tr>
+
+<tr>
+<td colspan="2" align="center">Use the keyword <b>ml:lurker-pp-4395-22-posta</b> to restrict your search to this mailing list.</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">Search for messages within this thread which contain the following keywords:</th>
+</tr>
+
+<tr>
+<td colspan="2" align="center">Use the keyword <b>th:ab5b1887</b> to restrict your search to this thread.</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">Use the keyword <b>th:a5a4d7ae</b> to restrict your search to this thread.</td>
+</tr>
+
+<td>
+<a href="javascript:trash('http://127.0.0.1/pp-4395-22-posta/zap/20231004.200456.5844618f.en.html');">
+<img src="../imgs/trash.png" alt="Delete this message" title="Delete this message">
+</a>
+</td>

@@ -92,3 +92,223 @@ for i in $(<ls-1); do
 		#read FAKE
 	done
 done
+echo "All '<form ' should be done away with by now".
+echo "Next is various unnecessary text string captions to those forms and some delete-trashes."
+read NOP
+
+if [ ! -e "ls-1" ]; then
+    find ./ -name '*.html' > ls-1
+fi
+for i in $(<ls-1); do
+	#cat $i
+	#read FAKE
+	#sed -i.bak 's/></>\n</g' $i
+	#read FAKE
+	#cat $i
+	#read FAKE
+	while ( grep -q 'Search the archive for matching messages\|Search for messages within this mailing list which contain the following keywords\|Search for messages within this thread which contain the following keywords' $i ); do
+		cat $i | grep 'Search the archive for matching messages\|Search for messages within this mailing list which contain the following keywords\|Search for messages within this thread which contain the following keywords' | wc -l
+		#read FAKE
+		cat $i | grep -C1 'Search the archive for matching messages\|Search for messages within this mailing list which contain the following keywords\|Search for messages within this thread which contain the following keywords' > rm_form_tmp
+		#ls -l rm_form_tmp
+		#cat rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp
+		#read FAKE
+		#diff $i rm_form_tmp
+		#read FAKE
+		echo diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		echo diff $i rm_form_tmp \| grep '< ' \| sed ...
+		#read FAKE
+		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
+		#read FAKE
+		ls -l $i ${i}r
+		#echo mv -v ${i}r $i
+		#read FAKE
+		mv -v ${i}r $i
+		#read FAKE
+	done
+done
+
+for i in $(<ls-1); do
+	#cat $i
+	#read FAKE
+	#sed -i.bak 's/></>\n</g' $i
+	#read FAKE
+	#cat $i
+	#read FAKE
+	while ( grep -q 'Jump to those messages within this mailing list which are nearest to the following date' $i ); do
+		cat $i | grep 'Jump to those messages within this mailing list which are nearest to the following date' | wc -l
+		#read FAKE
+		cat $i | grep -C1 'Jump to those messages within this mailing list which are nearest to the following date' > rm_form_tmp
+		#ls -l rm_form_tmp
+		#cat rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp
+		#read FAKE
+		#diff $i rm_form_tmp
+		#read FAKE
+		echo diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		echo diff $i rm_form_tmp \| grep '< ' \| sed ...
+		#read FAKE
+		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
+		#read FAKE
+		ls -l $i ${i}r
+		#echo mv -v ${i}r $i
+		#read FAKE
+		mv -v ${i}r $i
+		#read FAKE
+	done
+done
+
+for i in $(<ls-1); do
+	#cat $i
+	#read FAKE
+	#sed -i.bak 's/></>\n</g' $i
+	#read FAKE
+	#cat $i
+	#read FAKE
+	while ( grep -q 'Use the keyword.*to restrict your search to this' $i ); do
+		cat $i | grep 'Use the keyword.*to restrict your search to this' | wc -l
+		#read FAKE
+		cat $i | grep -C1 'Use the keyword.*to restrict your search to this' > rm_form_tmp
+		#ls -l rm_form_tmp
+		#cat rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp
+		#read FAKE
+		#diff $i rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		#diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		#echo diff $i rm_form_tmp \| grep '< ' \| sed ...
+		#read FAKE
+		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
+		#read FAKE
+		#ls -l $i ${i}r
+		#echo mv -v ${i}r $i
+		#read FAKE
+		mv -v ${i}r $i
+		#read FAKE
+	done
+done
+
+for i in $(<ls-1); do
+	#cat $i
+	#read FAKE
+	#sed -i.bak 's/></>\n</g' $i
+	#read FAKE
+	#cat $i
+	#read FAKE
+	while ( grep -q 'trash.png" alt="Delete this message' $i ); do
+		#cat $i | grep 'trash.png" alt="Delete this message' | wc -l
+		#read FAKE
+		cat $i | grep -C2 'trash.png" alt="Delete this message' > rm_form_tmp
+		#ls -l rm_form_tmp
+		#cat rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp
+		#read FAKE
+		#diff $i rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		#diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		#echo diff $i rm_form_tmp \| grep '< ' \| sed ...
+		#read FAKE
+		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
+		#read FAKE
+		ls -l $i ${i}r
+		#echo mv -v ${i}r $i
+		#read FAKE
+		mv -v ${i}r $i
+		#read FAKE
+	done
+done
+
+for i in $(<ls-1); do
+	#cat $i
+	#read FAKE
+	#sed -i.bak 's/></>\n</g' $i
+	#read FAKE
+	#cat $i
+	#read FAKE
+	while ( grep -q '>Jump to Group<' $i ); do
+		cat $i | grep '>Jump to Group<' | wc -l
+		#read FAKE
+		cat $i | grep '>Jump to Group<' > rm_form_tmp
+		ls -l rm_form_tmp
+		cat rm_form_tmp
+		#read FAKE
+		#echo diff $i rm_form_tmp
+		#read FAKE
+		#diff $i rm_form_tmp
+		#read FAKE
+		echo diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		diff $i rm_form_tmp | grep -v '< '
+		#read FAKE
+		echo diff $i rm_form_tmp \| grep '< ' \| sed ...
+		#read FAKE
+		diff $i rm_form_tmp | grep '< ' | sed 's/< //' > ${i}r
+		#read FAKE
+		ls -l $i ${i}r
+		echo mv -v ${i}r $i
+		#read FAKE
+		mv -v ${i}r $i
+		#read FAKE
+	done
+done
+
+echo "Various unnecessary text string captions to those forms and some delete-trashes should been rm'ed."
+echo "Next is sed Mailing List/Mail Archive, and sed mailing list/mail archive."
+read NOP
+
+for i in $(<ls-1); do
+	while ( grep -q 'Mailing List' $i ); do
+		cat $i | grep 'Mailing List' | wc -l
+		#read FAKE
+        sed -i.bak 's/Mailing List/Mail Archive/' $i
+		echo diff $i.bak $i
+		#read FAKE
+		diff $i.bak $i
+		#read FAKE
+	done
+done
+
+for i in $(<ls-1); do
+	while ( grep -q 'mailing list' $i ); do
+		cat $i | grep 'mailing list' | wc -l
+		#read FAKE
+        sed -i.bak 's/mailing list/mail archive/' $i
+		echo diff $i.bak $i
+		#read FAKE
+		diff $i.bak $i
+		#read FAKE
+	done
+done
+
+echo "sed Mailing List/Mail Archive, and sed mailing list/mail archive should been done."
+echo "Next is the home button fix"
+read NOP
+
+echo "WARNING: this part needs to be EDITED for any other use than Pp-4395-22-posta."
+read NOP
+for i in $(<ls-1); do
+	while ( grep -q 'splash/index.en.html' $i ); do
+        sed -i.bak 's$splash/index.en.html$list/lurker-pp-4395-22-posta.en.html$' $i
+		echo diff $i.bak $i
+		read FAKE
+		diff $i.bak $i
+		read FAKE
+	done
+done
